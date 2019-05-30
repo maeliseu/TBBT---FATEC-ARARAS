@@ -1,0 +1,532 @@
+html, body{
+  margin: 0 auto;
+  padding: 0;
+  background-image: url("../images/background2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*estrutura do site*/
+.envelope{
+  position: relative;
+  width: 960px;
+  margin: auto;
+  box-shadow: 0px 0px 25px 1px #FCC459;
+}
+.invi{
+display: none;
+}
+
+@media(max-width:700px) {
+  .envelope{
+    width: 100vw;
+    }
+}
+
+/*inicio cabealho*/
+
+#cabecalho{
+  background-image:url("../images/BANNER_OFICIAL.png");
+  width: 100%;
+  height: 500px;
+}
+
+@media(max-width:700px) {
+  #cabecalho{
+    background-image:url("../images/BANNER_OFICIAL_tall.png");
+    /* width: 50% */
+    height: 208px;
+    background-repeat: no-repeat;
+    background-size: 100% ;
+  }
+}
+
+/*fim cabecalho*/
+
+
+/*inicio do estilo do menu*/
+
+/*edita estrutura do menu*/
+.nav-menu{
+  margin:0px;
+  /* bottom: 0px; */
+  list-style:none;
+  font-family: impact;
+  width: 100%;
+  background-color: #000;
+}
+
+/*edita o texto dentro do "li"*/
+  ul li a{
+    text-decoration: none;
+    color:#FFF;
+    font-size: 25px;
+  }
+
+@media(max-width:700px) {
+  ul li a{
+    font-size: 15px;
+  }
+
+}
+
+  /*estiliza quando o cursor passa no link*/
+  ul li a:hover{
+    color: red;
+  }
+  /* ul li a:active{
+    color: red;
+  } */
+  .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    color: #fff;
+    background-color: red;
+}
+
+/*configura o estilo da ul*/
+ul{
+  list-style: none;
+  padding: 2%;
+  margin: 0;
+  text-align: center;
+}
+
+/*configura o estilo da li*/
+.menu li {
+  display: inline;
+  /* padding: 5%; */
+  margin: 0 5%;
+}
+.menu li:last-child {margin-left: 0;}
+.menu li:last-child {margin-right: 0;}
+
+.ativo {
+  color: red;
+}
+
+/*inicio so sinop*/
+
+/*configura a estrutura do sinop*/
+
+.sinopse{
+  width: 100%
+  height: auto;
+  background-image: radial-gradient(circle, #FCC459, #F7A035);
+}
+
+/*configura o titulo*/
+.titulo{
+  text-align: center;
+  font-family: impact;
+  font-size: 25px;
+  padding: 96px 10px 0px 10px
+}
+
+@media(max-width:700px) {
+  .titulo{
+    padding: 48px 5px 0px 5px
+  }
+}
+
+/*configura o texto*/
+.texto_sinopse{
+  text-align: justify;
+  font-family: arial;
+  font-size: 15px;
+  width: 70%;
+  margin: 0 auto;
+  padding: 0px 10px 96px 10px;
+}
+
+/*configura o paragrafo*/
+.texto_sinopse p{
+  line-height: 1.5;
+}
+
+
+/*inicio de video*/
+
+/*configura o corpo do video*/
+
+.corpo_video{
+  width: 100%;
+  height: auto;
+  background-color: #000;
+  margin: 0 auto;
+  color: #FFF;
+}
+
+.video {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+  margin: 10vw;
+}
+
+
+.video iframe,
+.video object,
+.video embe{
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+}
+
+ /* @media(max-width:700px) {
+   .video iframe{
+      margin: 0px 100px 48px 100px;
+      width: 90vw;
+      height: 50vw;
+   }
+ } */
+
+ /*inicio do rodape*/
+
+
+/*CONFIGURADO A ESTRUTURA*/
+ .rodape{
+background-image: radial-gradient(circle, #FCC459, #F7A035);
+ width: 100%;
+ height: 100px;
+ margin: 0 auto;
+}
+
+.rodape img{
+  width: 40%;
+  height: 80px;
+  margin: 0% 30% 0% 30%;
+}
+
+@media(max-width:700px) {
+  .rodape{
+    height: 50px;
+  }
+  .rodape img{
+    height: 40px;
+  }
+
+}
+
+/*comecando o sobre*/
+
+/* configura o corpo do fundo amarelo */
+.corpo_amarelo{
+  max-width: 100%;
+  height: auto;
+  background-image: radial-gradient(circle, #FCC459, #F7A035);
+  display: flex;
+  margin: auto;
+}
+
+@media(max-width:700px) {
+  .corpo_amarelo{
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+
+.row-wrap{
+  flex-flow: row wrap;
+}
+@media(max-width:700px) {
+  .row-wrap{
+    flex-flow:column;
+  }
+}
+
+.titulo_amarelo{
+ text-align: center;
+ font-family: impact;
+ font-size: 25px;
+ padding: 0px 10px 0px 10px;
+}
+.imagem{
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  margin: 0px auto 40px auto;
+}
+
+@media(max-width:700px) {
+  .imagem{
+    width: 40vw;
+    height: 40vw;
+    margin: auto;
+    align-items: center;
+
+  }
+
+}
+
+.info{
+  width: 50%;
+  margin: 96px 90px 96px 45px;
+  border-left:50%;
+  font-family: arial;
+  flex: 1;
+}
+
+@media(max-width:700px) {
+  .info{
+
+    /* padding: 70px; */
+    margin: 0px;
+  }
+}
+.txtrigth{
+  text-align:justify;
+}
+
+.txtleft{
+  text-align:justify;
+}
+
+/* @media(max-width:700px) {
+
+  .txtrigth, .txtleft{
+    text-align: center;
+  }
+} */
+
+
+/* fim do fundo amarelo */
+
+
+/* configura o corpo do fundo preto */
+
+.corpo_black{
+  width: 100%
+  height: 0 auto;
+  background-color: #000;
+  display: flex;
+  color: #FFF;
+}
+
+@media(max-width:700px) {
+  .corpo_black{
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+}
+
+
+
+.icone{
+  width: 50%;
+  height: auto;
+  padding: 10px;
+  flex: 1;
+  /* background-color: #DDD; */
+}
+
+@media(max-width:700px) {
+.icone{
+  /* padding-left: 70px; */
+  /* height: 400px; */
+  padding-bottom: 20px;
+  }
+}
+
+.titulo_black{
+ text-align: center;
+ font-family: impact;
+ font-size: 25px;
+ padding: 0px 10px 0px 10px;
+}
+
+
+
+/* fim do fundo preto */
+
+/* aqui link das imgs da pagina sobre */
+.imghawk{
+  background-image: url("../images/Stephen Hawking.png");
+}
+.imgcbs{
+  background-image: url("../images/CBS.jpg");
+}
+
+.imglorre{
+  background-image: url("../images/Chuck_Lorre.jpg");
+}
+
+/* fim */
+
+/* aqui link das imgs sa pagina elenco */
+
+.imgleonard{
+  background-image: url("../images/Leonard.png");
+}
+.imgpenny{
+  background-image: url("../images/Penny.png");
+}
+.imgsheldon{
+  background-image: url("../images/Sheldon.png");
+}
+.imgamy{
+  background-image: url("../images/Amy.png");
+}
+.imghoward{
+  background-image: url("../images/howard.png");
+}
+.imgraj{
+  background-image: url("../images/Raj.png");
+}
+.imgbernadette{
+  background-image: url("../images/Bernadette.png");
+}
+
+
+
+/* fim */
+
+/* aqui link das imgs da pagina temporadas */
+.imgt1{
+  background-image: url("../images/temporada_01.jpg");
+}
+.imgt2{
+  background-image: url("../images/temporada_02.jpg");
+}
+.imgt3{
+  background-image: url("../images/temporada_03.jpg");
+}
+.imgt4{
+  background-image: url("../images/temporada_04.jpg");
+}
+.imgt5{
+  background-image: url("../images/temporada_05.jpg");
+}
+.imgt6{
+  background-image: url("../images/temporada_06.jpg");
+}
+.imgt7{
+  background-image: url("../images/temporada_07.jpg");
+}
+.imgt8{
+  background-image: url("../images/temporada_08.jpg");
+}
+.imgt9{
+  background-image: url("../images/temporada_09.jpg");
+}
+.imgt10{
+  background-image: url("../images/temporada_10.jpg");
+}
+.imgt11{
+  background-image: url("../images/temporada_11.jpg");
+}
+
+/* fim */
+
+/* inicio do estilo temporadas */
+
+.lista1{
+  width: 300px;
+  height: auto;
+  line-height: 30px;
+
+
+}
+.lista2{
+  width: 300px;
+  height: auto;
+  padding: 10px;
+  line-height: 30px;
+}
+
+@media(max-width:700px) {
+  .lista1, .lista2 {
+    width: 100%;
+  }
+}
+
+/* configurando efeito sanfona */
+
+.accordions-item{
+  flex: 1;
+  padding-bottom: 10px;
+
+}
+.accordions-item input{
+	 display:none;
+}
+.accordions-item label{
+    display:block;
+    cursor:pointer;
+	  padding:5px 3px;
+    width: 150px;
+    margin: auto;
+    text-align: center;
+    border-radius: 20px;
+    color: #FFF;
+    font-family: impact;
+    background-color: #000;
+
+
+}
+.accordions-item label:hover{
+  background-image: url("../images/background2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.accordions-content{
+    height: 0px;
+    overflow: hidden;
+    -webkit-transition: height 0.3s ease-in-out;
+    -moz-transition: height 0.3s ease-in-out;
+    -o-transition: height 0.3s ease-in-out;
+    -ms-transition: height 0.3s ease-in-out;
+    transition: height 0.8s ease-in-out;
+    display: flex;
+    background-color: #000;
+    color: #FFF;
+    font-family: arial;
+    justify-content: center;
+
+ }
+
+@media(max-width:700px) {
+  .accordions-content{
+    font-size: 10px;
+  }
+}
+
+[id^=accordions]:checked ~ .accordions-content {
+    height: auto;
+}
+[id^=accordions2]:checked ~ .accordions-content{
+    height: auto;
+}
+[id^=accordions3]:checked ~ .accordions-content{
+    height: auto;
+}
+[id^=accordions4]:checked ~ .accordions-content{
+    height: auto;
+}
+[id^=accordions5]:checked ~ .accordions-content{
+    height: auto;
+}
+[id^=accordions6]:checked ~ .accordions-content{
+    height: auto;
+}
+[id^=accordions7]:checked ~ .accordions-content{
+    height: auto;
+}
+[id^=accordions8]:checked ~ .accordions-content{
+    height: auto;
+}
+[id^=accordions9]:checked ~ .accordions-content{
+    height: auto;
+}
+[id^=accordions10]:checked ~ .accordions-content{
+    height: auto;
+}
+[id^=accordions11]:checked ~ .accordions-content{
+    height: auto;
+}

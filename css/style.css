@@ -1,0 +1,110 @@
+html, body{
+    margin: 0 auto;
+    padding: 0;
+    background-image: url("../images/background2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}  
+  
+
+.justificado {
+     text-align: justify;
+  }
+
+.centralizar {
+    text-align: center;
+}
+
+.navbar-custom .nav-item.active .nav-link {
+    color: #ffffff;
+    background-color: red;
+}
+
+.navbar-custom .nav-item:hover .nav-link {
+    background-color:white;
+    color:red;
+    
+}
+
+.navbar-custom .navbar-nav .nav-link {
+    color: white;
+    
+    
+}
+.navbar-custom .navbar-nav .nav-link {
+   background-color: rgba(0,0,0,0.5);
+    margin-right: 5px;
+}
+
+ /* .navbar {
+  height: 55px;
+} */
+
+.navbar-toggler {
+    background-color: white;
+}
+
+
+/*  */
+
+.corpo_video{
+    width: 100%;
+    height: auto;
+    background-color: #000;
+    margin: 0 auto;
+    color: #FFF;
+  }
+  
+  .video {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+    /* margin: 10vw; */
+  }
+  
+  
+  .video iframe,
+  .video object,
+  .video embe{
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+  }
+
+  .rodape{
+    background-image: radial-gradient(circle, #FCC459, #F7A035);
+     width: 100%;
+     height: 100px;
+     margin: 0 auto;
+    }
+    
+    .rodape img{
+      width: 40%;
+      height: 80px;
+      margin: 0% 30% 0% 30%;
+    }
+
+/*  */
+
+.scroll-box {
+  overflow-y: scroll;
+  height: 300px;
+}
+
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+  height: 20px;
+  width: 20px;
+  outline: black;
+  background-color: rgba(230, 53, 22, 0.3);
+  background-size: 100%, 100%;
+  border-radius: 50%;
+  border: 1px solid black;
+  /* background-image: none; */
+  align-self: flex-end; /* Aligns it at the top */
+  margin-bottom: 20px;
+}
